@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+
+.body{
+    background: url("../img/bg.jpg");
+    min-height:100vh;
+    background-repeat:no-repeat;
+    background-color:rgb(245, 178, 70);
+    background-size:80vh 50vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#scoreBox{
+    position:absolute;
+    top: 9px;
+    right: 180px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Mate SC', serif;
+
+}
+#hiscoreBox{
+    position:absolute;
+    top: 65px;
+    right: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Mate SC', serif;
+
+}
+#board{
+    background:linear-gradient(rgb(177, 155, 113),rgba(231, 203, 203, 0.87));
+    width:90vmin;
+    height:92vmin;
+    border:2px solid darkslategray;
+    display:grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+    
+}
+
+.head{
+    background:linear-gradient(firebrick,rgb(224, 224, 134));
+    border:2px solid rgb(189, 8, 189); 
+    transform:scale(1.02);
+    border-radius:8px;
+}
+
+.snake{
+    background-color:purple;
+    border: .25vmin solid black;
+    border-radius:12px;
+}
+.food{
+    background:linear-gradient(yellow,white);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
